@@ -5,9 +5,9 @@ import { GrCode } from "react-icons/gr";
 
 const about = () => {
   return (
-    <div className='w-full h-auto || md:w-fit || lg:pb-[60px] px-[30px]'>
-      <div className='flex items-center'>
-        <span className='inline  pl-[20px] text-xsx || lg:pl-[100px] '>About Me</span><hr className='w-[150px] ml-[20px] h-[2px] text-accent ||'></hr>
+    <div className='w-full h-auto || md:w-fit || lg:pb-[60px] px-[100px]'>
+      <div className='flex items-center '>
+        <span className='inline  text-xsx ||  '>About Me</span><hr className='w-[150px] ml-[20px] h-[2px] text-accent ||'></hr>
       </div>
       <div className=" w-full flex flex-col md:flex-row  || lg:pt-[30px]">
         <div className=" w-[100%] md:w-[40%]  h-full  ">
@@ -45,8 +45,8 @@ const about = () => {
           </div>
         </div>
         <div className=" w-full  h-auto ">
-          <p className='text-[13px] first-letter:uppercase p-[20px]'>Une brève description contenant les informations nécessaires afin de me connaitre de point de vue plus proche, ainsi qu&apos;avoir une idée globale sur mon cursus académique et professionnel, avec les competences techniques.</p>
-          <div className='w-full grid grid-cols-2 gap-6 '>
+          <p className='text-[13px] first-letter:uppercase px-[30px]'>Une brève description contenant les informations nécessaires afin de me connaitre de point de vue plus proche, ainsi qu&apos;avoir une idée globale sur mon cursus académique et professionnel, avec les competences techniques.</p>
+          <div className='w-full grid grid-cols-2 gap-6 p-[30px]'>
             <span className='flex items-center '>
               <BsArrowReturnRight className='mr-[5px] text-accent text-[20px] ' />
               <p className='  text-[12px] font-bold'>Date De naissance: </p>
