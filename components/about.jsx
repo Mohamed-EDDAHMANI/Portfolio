@@ -15,7 +15,7 @@ const about = () => {
             <div className='absolute  z-10 overflow-hidden'>
               <img
                 className=' w-[200px] h-[200px] rounded-full'
-                src='/IMG-20240728-WA0126.jpg'  // Replace with the path to your image
+                src='/my-pic-removebg-preview.png'  // Replace with the path to your image
                 alt='Description of the image'  // Replace with appropriate alt text
               />
             </div>
