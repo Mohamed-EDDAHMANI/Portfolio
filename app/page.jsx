@@ -12,7 +12,7 @@ import { Element } from 'react-scroll';
 export default function Home() {
   return (
     <main>
-      <Element name="Home" className="w-full ss:mt-[100px] mt-[70px] pl-[20px] || lg:mt-[140px] lg:px-[100px] lg:pb-[80px] ">
+      <Element name="Home" className="w-full ss:mt-[100px] mt-[70px] pl-[20px] || lg:mt-[180px] lg:px-[100px] lg:pb-[130px] ">
         <h1 className="font-semibold text-[30px] || ">
           Mohamed EDDAHMANI...
         </h1>

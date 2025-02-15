@@ -5,7 +5,7 @@ import { GrCode } from "react-icons/gr";
 
 const about = () => {
   return (
-    <div className='w-full h-auto || md:w-fit || lg:pb-[60px] px-[100px]'>
+    <div className='w-full h-auto  pl-[20px] lg:px-[100px] '>
       <div className='flex items-center '>
         <span className='inline  text-xsx ||  '>About Me</span><hr className='w-[150px] ml-[20px] h-[2px] text-accent ||'></hr>
       </div>

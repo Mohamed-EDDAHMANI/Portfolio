@@ -37,7 +37,7 @@ module.exports = {
         },
       },
       boxShadow: {
-        'blue': '0 0px 4px 2px rgba(58, 255, 145, 0.8)',
+        'blue': '0 2px 4px 1px rgba(58, 255, 145, 0.8)',
         'custom-inset': 'rgba(0, 255, 0, 0.69) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px',
       },
       keyframes: {
