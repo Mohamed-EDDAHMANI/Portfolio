@@ -37,7 +37,8 @@ const Contact = () => {
   return (
     <div>
       <div className='flex items-center'>
-        <span className='inline pr-4 pl-[20px] text-xsx  || lg:pl-[100px]'>Contact</span><hr className='w-[150px] ml-[20px] h-[2px] text-accent '></hr>
+        <span className='inline pr-4 pl-[20px] text-xl font-semibold lg:pl-[100px]'>Contact</span>
+        <div className='w-32 h-1 ml-4 rounded-full bg-gradient-to-r from-accent to-primary'></div>
       </div>
 
       <div className='w-auto flex flex-col pb-[20px] || lg:flex-row'>

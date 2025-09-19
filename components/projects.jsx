@@ -52,11 +52,11 @@ const Projects = () => {
   ];
 
   return (
-    <div className='w-full h-auto pl-[20px] lg:px-[100px]'>
+    <div className='w-full h-auto pl-[20px] lg:px-[100px] pb-28'>
       {/* Section Header - matching About component style */}
       <div className='flex items-center'>
-        <span className='inline text-xsx'>Projects</span>
-        <hr className='w-[150px] ml-[20px] h-[2px] text-accent border-none' />
+        <span className='inline text-xl font-semibold'>Projects</span>
+        <div className='w-32 h-1 ml-4 rounded-full bg-gradient-to-r from-accent to-primary'></div>
       </div>
 
       {/* Projects Grid */}

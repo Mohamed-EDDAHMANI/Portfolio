@@ -5,6 +5,7 @@ import "./globals.css";
 // Components
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import BackgroundAnimation from "@/components/BackgroundAnimation";
 
 const JetBrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={JetBrainsMono.variable}>
+        <BackgroundAnimation />
         <Header />
         {children}
         <Footer />
