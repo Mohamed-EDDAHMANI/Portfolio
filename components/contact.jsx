@@ -78,7 +78,7 @@ const Contact = () => {
             <div className='w-[80%]  rounded-[20px] border border-accent px-[20px] py-[10px]'>
               <div className='flex space-x-4 mb-2'>
                 <div className='w-1/2'>
-                  <h1 className='text-[14px] font-semibold mb-1'>Nom d'utilisateur</h1>
+                  <h1 className='text-[14px] font-semibold mb-1'>Nom d&apos;utilisateur</h1>
                   <input type="text" name='name' minLength={3} maxLength={30} required className='w-full h-[30px] p-2 border border-gray-300 rounded text-black' />
                 </div>
                 <div className='w-1/2'>
