@@ -6,15 +6,15 @@ import { usePathname } from "next/navigation"
 
 const links = [
     {
-        name: "Home",
+        name: "Accueil",
         path: "Home"
     },
     {
-        name: "About",
+        name: "À Propos",
         path: "about"
     },
     {
-        name: "Project",
+        name: "Projets",
         path: "project"
     },
     {

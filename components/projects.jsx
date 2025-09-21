@@ -7,8 +7,8 @@ const Projects = () => {
   const projectsData = [
     {
       id: 1,
-      title: "Gestion-scolaire-V2",
-      description: "Gestion-scolaire-V2 est une application de base de données dynamique avec un système de connexion sécurisé par jeton. Les utilisateurs peuvent ajouter, supprimer et mettre à jour des données grâce aux opérations CRUD. Le backend utilise Node.js, Express, et MongoDB, avec Redux pour une gestion efficace de l'état",
+      title: "Gestion Scolaire V2",
+      description: "Application de gestion scolaire dynamique avec système d'authentification sécurisé par jeton. Permet aux utilisateurs d'effectuer des opérations CRUD complètes (ajout, suppression, mise à jour) sur les données. Développée avec Node.js, Express et MongoDB, utilisant Redux pour une gestion optimisée de l'état.",
       image: "/gestion-vid.mp4",
       isVideo: true,
       technologies: [
@@ -24,7 +24,7 @@ const Projects = () => {
     {
       id: 2,
       title: "Portfolio Personnel",
-      description: "Portfolio moderne et responsive développé avec Next.js et Tailwind CSS. Design minimaliste avec animations fluides et optimisation SEO.",
+      description: "Portfolio moderne et entièrement responsive développé avec Next.js et Tailwind CSS. Interface épurée avec des animations fluides, optimisation SEO avancée et design adaptatif pour tous les appareils.",
       image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop&crop=entropy&auto=format&q=60",
       isVideo: false,
       technologies: [
@@ -37,8 +37,8 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: "E-commerce Platform",
-      description: "Plateforme e-commerce complète avec gestion des produits, panier d'achat, système de paiement et tableau de bord administrateur.",
+      title: "Plateforme E-commerce",
+      description: "Plateforme e-commerce complète et robuste incluant la gestion avancée des produits, panier d'achat intelligent, système de paiement sécurisé et tableau de bord administrateur complet pour la gestion des commandes.",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&crop=entropy&auto=format&q=60",
       isVideo: false,
       technologies: [
@@ -52,20 +52,20 @@ const Projects = () => {
   ];
 
   return (
-    <div className='w-full h-auto pl-[20px] lg:px-[100px] pb-28'>
+    <div className='w-full overflow-x-hidden px-4 sm:px-6 lg:px-16 xl:px-24 pb-28'>
       {/* Section Header - matching About component style */}
-      <div className='flex items-center'>
-        <span className='inline text-xl font-semibold'>Projects</span>
+      <div className='flex items-center mb-8 lg:mb-10'>
+        <span className='inline text-xl font-semibold'>Projets</span>
         <div className='w-32 h-1 ml-4 rounded-full bg-gradient-to-r from-accent to-primary'></div>
       </div>
 
       {/* Projects Grid */}
-      <div className='w-full pt-[30px] lg:pt-[30px]'>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8'>
+      <div className='w-full min-w-0'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8'>
           {projectsData.map((project) => (
-            <div key={project.id} className='group h-full'>
+            <div key={project.id} className='group h-full min-w-0 bg-gradient-to-t from-backdrop-blur-md to-transparent backdrop-blur-md'>
               {/* Project Card */}
-              <div className='bg-transparent rounded-[20px] overflow-hidden transition-all duration-300 hover:transform hover:scale-105 shadow-blue h-full flex flex-col'>
+              <div className='bg-transparent rounded-[20px] overflow-hidden transition-all duration-300 hover:transform hover:scale-105 shadow-blue h-full flex flex-col w-full'>
                 {/* Image/Video Container */}
                 <div className='relative h-[200px] sm:h-[250px] rounded-[20px] overflow-hidden mb-4 flex-shrink-0'>
                   {project.isVideo ? (
@@ -117,22 +117,22 @@ const Projects = () => {
                 </div>
 
                 {/* Project Info */}
-                <div className='px-4 pb-2 flex-grow flex flex-col'>
-                  <h3 className='text-white text-lg sm:text-xl font-bold mb-2'>{project.title}</h3>
-                  <p className='text-gray-400 text-xs sm:text-sm mb-4 leading-relaxed line-clamp-3 flex-grow'>{project.description}</p>
+                <div className='px-4 pb-2 flex-grow flex flex-col min-w-0 w-full'>
+                  <h3 className='text-white text-lg sm:text-xl font-bold mb-2 break-words'>{project.title}</h3>
+                  <p className='text-gray-400 text-xs sm:text-sm mb-4 leading-relaxed line-clamp-3 flex-grow break-words'>{project.description}</p>
                   
                   {/* Technologies */}
-                  <div className='flex flex-wrap gap-2 sm:gap-3 mb-4'>
+                  <div className='flex flex-wrap gap-2 sm:gap-3 mb-4 overflow-hidden w-full'>
                     {project.technologies.map((tech, index) => (
-                      <div key={index} className='flex items-center space-x-1 sm:space-x-2'>
-                        <span className='text-white text-xs sm:text-sm'>{tech.name}</span>
-                        <tech.icon className='text-accent text-base sm:text-lg' />
+                      <div key={index} className='flex items-center space-x-1 sm:space-x-2 flex-shrink-0 min-w-0'>
+                        <span className='text-white text-xs sm:text-sm truncate'>{tech.name}</span>
+                        <tech.icon className='text-accent text-base sm:text-lg flex-shrink-0' />
                       </div>
                     ))}
                   </div>
 
                   {/* Action Buttons */}
-                  <div className='flex flex-col sm:flex-row gap-2 sm:gap-3 mt-auto'>
+                  <div className='flex flex-col sm:flex-row gap-2 sm:gap-3 mt-auto min-w-0 w-full'>
                     {project.githubUrl && project.githubUrl !== "#" && (
                       <a 
                         href={project.githubUrl}

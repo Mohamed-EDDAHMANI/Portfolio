@@ -49,7 +49,7 @@ const Contact = () => {
               <CiLocationOn className='text-[35px]' />
             </div>
             <div className='pl-[20px]'>
-              <h1 className='font-bold text-accent text-[20px]'>LOCATION</h1>
+              <h1 className='font-bold text-accent text-[20px]'>LOCALISATION</h1>
               <h4>Agadir, Maroc</h4>
             </div>
           </div>
@@ -58,7 +58,7 @@ const Contact = () => {
               <CiMail className='text-[35px]' />
             </div>
             <div className='pl-[20px]'>
-              <h1 className='font-bold text-accent text-[20px]'>MAIL</h1>
+              <h1 className='font-bold text-accent text-[20px]'>EMAIL</h1>
               <h4>dsimo4323@gmail.com</h4>
             </div>
           </div>
@@ -67,8 +67,8 @@ const Contact = () => {
               <FaTelegramPlane className='text-[35px]' />
             </div>
             <div className='pl-[20px]'>
-              <h1 className='font-bold text-accent text-[20px]'>TELEGRAM</h1>
-              <h4>+212658511779</h4>
+              <h1 className='font-bold text-accent text-[20px]'>TÉLÉPHONE</h1>
+              <h4>+212 659 511 779</h4>
             </div>
           </div>
         </div>
@@ -78,7 +78,7 @@ const Contact = () => {
             <div className='w-[80%]  rounded-[20px] border border-accent px-[20px] py-[10px]'>
               <div className='flex space-x-4 mb-2'>
                 <div className='w-1/2'>
-                  <h1 className='text-[14px] font-semibold mb-1'>Username</h1>
+                  <h1 className='text-[14px] font-semibold mb-1'>Nom d'utilisateur</h1>
                   <input type="text" name='name' minLength={3} maxLength={30} required className='w-full h-[30px] p-2 border border-gray-300 rounded text-black' />
                 </div>
                 <div className='w-1/2'>
@@ -87,7 +87,7 @@ const Contact = () => {
                 </div>
               </div>
               <div className='mb-2'>
-                <h1 className='text-[14px] font-semibold mb-1'>Subject</h1>
+                <h1 className='text-[14px] font-semibold mb-1'>Sujet</h1>
                 <input  type="text" minLength={3} maxLength={40} required name="subject" className='w-full h-[30px] p-2 border border-gray-300 rounded text-black' />
               </div>
               <div className='mb-4'>
@@ -95,7 +95,7 @@ const Contact = () => {
                 <textarea name="message" rows={4} required className='w-full h-[80px] p-2 border border-gray-300 rounded text-black' />
               </div>
               <div>
-                <button className='w-full h-[30px] bg-accent text-white rounded hover:bg-green-500 transition duration-300 ease-in-out'>Submit</button>
+                <button className='w-full h-[30px] bg-accent text-white rounded hover:bg-green-500 transition duration-300 ease-in-out'>Envoyer</button>
               </div>
             </div>
           </form>
