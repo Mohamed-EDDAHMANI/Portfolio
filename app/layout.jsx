@@ -1,11 +1,14 @@
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
+// Context
+import { ThemeProvider } from "@/context/ThemeContext";
 
 // Components
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import BackgroundAnimation from "@/components/BackgroundAnimation";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const JetBrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -22,10 +25,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={JetBrainsMono.variable}>
-        <BackgroundAnimation />
-        <Header />
-        {children}
-        <Footer />
+        <ThemeProvider>
+          <BackgroundAnimation />
+          <Header />
+          {children}
+          <Footer />
+          <ThemeToggle />
+        </ThemeProvider>
       </body>
     </html>
   );

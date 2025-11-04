@@ -4,10 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
+  * {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  }
+  
   body {
-    @apply font-primary bg-primary text-white leading-loose;
+    @apply font-primary leading-loose;
+    @apply bg-black dark:bg-white;
+    @apply text-white dark:text-black;
   }
 }
 
