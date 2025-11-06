@@ -21,7 +21,7 @@ export default function Home() {
             </h1>
             <div className="relative text-[20px] lg:text-[24px] flex items-center mb-8">
               <span className="text-white dark:text-black">Je suis</span>
-              <span className="ml-4 text-orange-500">
+              <span className="ml-4 text-accent">
                 <Typewriter
                   options={{
                     strings: [
@@ -43,7 +43,7 @@ export default function Home() {
               <Button
                 variant="outline"
                 size="lg"
-                className="uppercase flex items-center gap-2 text-orange-500 bg-transparent hover:bg-orange-500 hover:text-white dark:hover:text-black border border-orange-500 rounded-full transition-colors duration-300"
+                className="uppercase flex items-center gap-2 text-accent bg-transparent hover:bg-accent hover:text-white dark:hover:text-black border border-accent rounded-full transition-colors duration-300"
               >
                 <span>Télécharger CV</span>
                 <FiDownload className="text-xl" />
@@ -61,9 +61,9 @@ export default function Home() {
                   alt="Mohamed Eddahmani"
                 />
               </div>
-              <div className="relative rounded-full border-[3px] border-orange-500 h-[320px] w-[320px] lg:h-[370px] lg:w-[370px] flex items-center justify-center animate-spin-slow">
+              <div className="relative rounded-full border-[3px] border-accent h-[320px] w-[320px] lg:h-[370px] lg:w-[370px] flex items-center justify-center animate-spin-slow">
                 <div className="absolute w-[350px] h-[250px] lg:w-[400px] lg:h-[280px] bg-black dark:bg-white rounded-full"></div>
-                <div className="relative rounded-full border-[5px] border-orange-500 h-[290px] w-[290px] lg:h-[340px] lg:w-[340px] flex items-center justify-center animate-spin-slow"></div>
+                <div className="relative rounded-full border-[5px] border-accent h-[290px] w-[290px] lg:h-[340px] lg:w-[340px] flex items-center justify-center animate-spin-slow"></div>
               </div>
             </div>
           </div>

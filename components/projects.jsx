@@ -56,7 +56,7 @@ const Projects = () => {
       {/* Section Header - matching About component style */}
       <div className='flex items-center mb-8 lg:mb-10'>
         <span className='inline text-xl font-semibold'>Projets</span>
-        <div className='w-32 h-1 ml-4 rounded-full bg-gradient-to-r from-accent to-primary'></div>
+        <div className='w-32 h-1 ml-4 rounded-full bg-gradient-to-r from-accent to-transparent'></div>
       </div>
 
       {/* Projects Grid */}

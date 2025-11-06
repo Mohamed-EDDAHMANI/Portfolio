@@ -30,10 +30,14 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#1c1c22',
+        primary: {
+          DEFAULT: '#3b82f6',
+          dark: '#1c1c22',
+        },
         accent: {
           DEFAULT: '#00ff99',
           hover: '#00e187',
+          light: '#ff6b35', // Orange for light mode
         },
       },
       boxShadow: {

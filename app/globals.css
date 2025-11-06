@@ -14,6 +14,16 @@
     @apply bg-black dark:bg-white;
     @apply text-white dark:text-black;
   }
+  
+  :root {
+    --primary-dark-light: #ffffff;
+    --accent-light: #ff6b35;
+  }
+  
+  .dark {
+    --primary-dark-light: #1c1c22;
+    --accent-light: #00ff99;
+  }
 }
 
 @layer utilities {

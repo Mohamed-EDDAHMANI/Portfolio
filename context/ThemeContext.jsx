@@ -2,10 +2,13 @@
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
 
-const ThemeContext = createContext();
+const ThemeContext = createContext({
+  isDarkMode: false,
+  toggleTheme: () => {}
+});
 
 export const ThemeProvider = ({ children }) => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -19,6 +22,8 @@ export const ThemeProvider = ({ children }) => {
       } else {
         document.documentElement.classList.remove('dark');
       }
+    } else {
+      document.documentElement.classList.add('dark');
     }
   }, []);
 
@@ -35,12 +40,8 @@ export const ThemeProvider = ({ children }) => {
     }
   };
 
-  if (!mounted) {
-    return <>{children}</>;
-  }
-
   return (
-    <ThemeContext.Provider value={{ isDarkMode, toggleTheme }}>
+    <ThemeContext.Provider value={{ isDarkMode, toggleTheme, mounted }}>
       {children}
     </ThemeContext.Provider>
   );
