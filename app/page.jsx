@@ -11,16 +11,16 @@ import { Element } from 'react-scroll';
 
 export default function Home() {
   return (
-    <main className="bg-black dark:bg-white transition-colors duration-300">
+    <main className="bg-white dark:bg-black transition-colors duration-300">
       <Element name="Home" className="w-full ss:mt-[100px] mt-[70px] pl-[20px] || lg:mt-[180px] lg:px-[100px] lg:pb-[130px] overflow-hidden ">
         <div className="w-full flex flex-col lg:flex-row items-center lg:items-start gap-12 lg:gap-16">
           {/* Content Section */}
           <div className="w-full lg:w-[60%] flex flex-col">
-            <h1 className="font-semibold text-[30px] lg:text-[40px] mb-6 text-white dark:text-black">
+            <h1 className="font-semibold text-[30px] lg:text-[40px] mb-6 text-black dark:text-white">
               Mohamed EDDAHMANI...
             </h1>
             <div className="relative text-[20px] lg:text-[24px] flex items-center mb-8">
-              <span className="text-white dark:text-black">Je suis</span>
+              <span className="text-black dark:text-white">Je suis</span>
               <span className="ml-4 text-accent">
                 <Typewriter
                   options={{
@@ -36,7 +36,7 @@ export default function Home() {
               </span>
             </div>
 
-            <p className="text-base lg:text-lg leading-relaxed mb-10 text-white dark:text-black">
+            <p className="text-base lg:text-lg leading-relaxed mb-10 text-black dark:text-white">
               Bienvenue dans mon univers ! Je suis développeur web passionné avec une solide expertise en développement front-end et back-end. Je me spécialise dans la création d&apos;applications web intuitives et responsives en utilisant React et son écosystème technologique.
             </p>
             <a href="/CV_Mohamed_EDDAHMANI.pdf" download>
@@ -62,7 +62,7 @@ export default function Home() {
                 />
               </div>
               <div className="relative rounded-full border-[3px] border-accent h-[320px] w-[320px] lg:h-[370px] lg:w-[370px] flex items-center justify-center animate-spin-slow">
-                <div className="absolute w-[350px] h-[250px] lg:w-[400px] lg:h-[280px] bg-black dark:bg-white rounded-full"></div>
+                <div className="absolute w-[350px] h-[250px] lg:w-[400px] lg:h-[280px] bg-white dark:bg-black rounded-full"></div>
                 <div className="relative rounded-full border-[5px] border-accent h-[290px] w-[290px] lg:h-[340px] lg:w-[340px] flex items-center justify-center animate-spin-slow"></div>
               </div>
             </div>

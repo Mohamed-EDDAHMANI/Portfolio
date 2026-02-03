@@ -74,9 +74,10 @@ const BackgroundAnimation = () => {
 
       draw() {
         if (this.opacity > 0) {
+          const accent = getComputedStyle(document.documentElement).getPropertyValue('--accent').trim() || '#00ff99';
           ctx.save();
           ctx.globalAlpha = this.opacity;
-          ctx.fillStyle = '#00ff99';
+          ctx.fillStyle = accent;
           ctx.beginPath();
           ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
           ctx.fill();
@@ -129,11 +130,8 @@ const BackgroundAnimation = () => {
   return (
     <canvas
       ref={canvasRef}
-      className="fixed top-0 left-0 w-full h-full pointer-events-none z-0"
-      style={{ 
-        background: 'transparent',
-        mixBlendMode: 'screen'
-      }}
+      className="bg-animation-canvas fixed top-0 left-0 w-full h-full pointer-events-none z-0"
+      style={{ background: 'transparent' }}
     />
   );
 };

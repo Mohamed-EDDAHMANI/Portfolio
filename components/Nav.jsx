@@ -39,7 +39,7 @@ const Nav = ({ className }) => {
                         to={link.path} 
                         smooth={true}
                         duration={500}
-                        className={`${linkClass} capitalize font-medium hover:text-accent transition-all cursor-pointer`} >
+                        className={`${linkClass} capitalize font-medium text-black dark:text-white hover:text-accent transition-all cursor-pointer`} >
                         {link.name}
                     </ScrollLink>
                 )

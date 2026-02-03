@@ -35,9 +35,9 @@ module.exports = {
           dark: '#1c1c22',
         },
         accent: {
-          DEFAULT: '#00ff99',
-          hover: '#00e187',
-          light: '#ff6b35', // Orange for light mode
+          DEFAULT: 'var(--accent)',
+          hover: 'var(--accent-hover)',
+          light: '#ff6b35',
         },
       },
       boxShadow: {

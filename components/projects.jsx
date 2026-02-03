@@ -55,7 +55,7 @@ const Projects = () => {
     <div className='w-full overflow-x-hidden px-4 sm:px-6 lg:px-16 xl:px-24 pb-28'>
       {/* Section Header - matching About component style */}
       <div className='flex items-center mb-8 lg:mb-10'>
-        <span className='inline text-xl font-semibold'>Projets</span>
+        <span className='inline text-xl font-semibold text-black dark:text-white'>Projets</span>
         <div className='w-32 h-1 ml-4 rounded-full bg-gradient-to-r from-accent to-transparent'></div>
       </div>
 
@@ -65,7 +65,7 @@ const Projects = () => {
           {projectsData.map((project) => (
             <div key={project.id} className='group h-full min-w-0 bg-gradient-to-t from-backdrop-blur-md to-transparent backdrop-blur-md'>
               {/* Project Card */}
-              <div className='bg-transparent rounded-[20px] overflow-hidden transition-all duration-300 hover:transform hover:scale-105 shadow-blue h-full flex flex-col w-full'>
+              <div className='bg-transparent rounded-[20px] overflow-hidden transition-all duration-300 hover:transform hover:scale-105 shadow-project h-full flex flex-col w-full'>
                 {/* Image/Video Container */}
                 <div className='relative h-[200px] sm:h-[250px] rounded-[20px] overflow-hidden mb-4 flex-shrink-0'>
                   {project.isVideo ? (
@@ -118,14 +118,14 @@ const Projects = () => {
 
                 {/* Project Info */}
                 <div className='px-4 pb-2 flex-grow flex flex-col min-w-0 w-full'>
-                  <h3 className='text-white text-lg sm:text-xl font-bold mb-2 break-words'>{project.title}</h3>
-                  <p className='text-gray-400 text-xs sm:text-sm mb-4 leading-relaxed line-clamp-3 flex-grow break-words'>{project.description}</p>
+                  <h3 className='text-black dark:text-white text-lg sm:text-xl font-bold mb-2 break-words'>{project.title}</h3>
+                  <p className='text-gray-600 dark:text-gray-400 text-xs sm:text-sm mb-4 leading-relaxed line-clamp-3 flex-grow break-words'>{project.description}</p>
                   
                   {/* Technologies */}
                   <div className='flex flex-wrap gap-2 sm:gap-3 mb-4 overflow-hidden w-full'>
                     {project.technologies.map((tech, index) => (
                       <div key={index} className='flex items-center space-x-1 sm:space-x-2 flex-shrink-0 min-w-0'>
-                        <span className='text-white text-xs sm:text-sm truncate'>{tech.name}</span>
+                        <span className='text-black dark:text-white text-xs sm:text-sm truncate'>{tech.name}</span>
                         <tech.icon className='text-accent text-base sm:text-lg flex-shrink-0' />
                       </div>
                     ))}

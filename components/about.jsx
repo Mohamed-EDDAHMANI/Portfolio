@@ -67,14 +67,14 @@ const About = () => {
   return (
     <div className="w-full min-h-screen flex flex-col px-4 sm:px-6 lg:px-16 xl:px-24 py-6 lg:py-10">
       <div className="flex items-center justify-center lg:justify-start mb-8 lg:mb-10">
-        <span className="text-2xl lg:text-3xl font-semibold">À Propos</span>
+        <span className="text-2xl lg:text-3xl font-semibold text-black dark:text-white">À Propos</span>
         <div className="w-24 sm:w-32 lg:w-40 h-1 ml-4 lg:ml-6 rounded-full bg-gradient-to-r from-accent to-transparent"></div>
       </div>
 
-      <div className="bg-secondary/50 rounded-xl p-5 lg:p-6 shadow-lg mb-6 lg:mb-8 bg-gradient-to-t from-backdrop-blur-md to-transparent backdrop-blur-md">
+      <div className="bg-gray-100 dark:bg-gray-800/50 rounded-xl p-5 lg:p-6 shadow-lg mb-6 lg:mb-8 bg-gradient-to-t from-backdrop-blur-md to-transparent backdrop-blur-md">
         <div className="flex items-center mb-5">
           <User className="w-5 h-5 text-accent mr-3" />
-          <h2 className="text-lg lg:text-xl font-semibold">Informations Personnelles</h2>
+          <h2 className="text-lg lg:text-xl font-semibold text-black dark:text-white">Informations Personnelles</h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-6 gap-3 lg:gap-4">
           {Object.entries(personalInfo).map(([key, value], index) => (
@@ -86,7 +86,7 @@ const About = () => {
               {key === "email" && <Mail className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />}
               {key === "freelance" && <Briefcase className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />}
               <div className="min-w-0 flex-1 overflow-hidden">
-                <p className="font-medium text-xs lg:text-sm xl:text-base truncate">{value}</p>
+                <p className="font-medium text-xs lg:text-sm xl:text-base truncate text-black dark:text-white">{value}</p>
               </div>
             </div>
           ))}
@@ -96,49 +96,49 @@ const About = () => {
       <div className="flex-1 grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
         
         <div className="lg:col-span-1 flex flex-col bg-gradient-to-t from-backdrop-blur-md to-transparent backdrop-blur-md">
-          <div className="bg-secondary/50 rounded-xl p-5 lg:p-6 shadow-lg h-full">
+          <div className="bg-gray-100 dark:bg-gray-800/50 rounded-xl p-5 lg:p-6 shadow-lg h-full">
             <div className="flex items-center mb-5">
               <Code className="w-5 h-5 text-accent mr-3" />
-              <h3 className="text-lg lg:text-xl font-semibold">Compétences Techniques</h3>
+              <h3 className="text-lg lg:text-xl font-semibold text-black dark:text-white">Compétences Techniques</h3>
             </div>
             <div className="grid grid-cols-2 gap-2.5">
               {technicalSkills.map((skill, index) => (
                 <div key={index} className="flex items-center gap-2 p-2.5 lg:p-3 rounded-lg hover:bg-accent/10 transition-colors ">
                   <div className="w-2 h-2 bg-accent rounded-full flex-shrink-0"></div>
-                  <span className="text-xs lg:text-sm font-medium">{skill}</span>
+                  <span className="text-xs lg:text-sm font-medium text-black dark:text-white">{skill}</span>
                 </div>
               ))}
             </div>
           </div>
         </div>
 
-        <div className="lg:col-span-2 flex flex-col bg-secondary/50 rounded-xl p-5 lg:p-6 xl:p-7 shadow-lg bg-gradient-to-t from-backdrop-blur-md to-transparent backdrop-blur-md">
+        <div className="lg:col-span-2 flex flex-col bg-gray-100 dark:bg-gray-800/50 rounded-xl p-5 lg:p-6 xl:p-7 shadow-lg bg-gradient-to-t from-backdrop-blur-md to-transparent backdrop-blur-md">
           <div className="flex items-center mb-6">
             <GraduationCap className="w-5 h-5 text-accent mr-3" />
-            <h2 className="text-lg lg:text-xl font-semibold">Formation & Expérience</h2>
+            <h2 className="text-lg lg:text-xl font-semibold text-black dark:text-white">Formation & Expérience</h2>
           </div>
           <div className="space-y-6">
             {educationalInfo.slice().reverse().map((item, index) => (
-              <div key={index} className="group relative bg-secondary rounded-xl p-4 lg:p-5 shadow-md hover:bg-secondary/80 hover:bg-gray-800 transition-colors cursor-pointer ">
+              <div key={index} className="group relative bg-gray-200/80 dark:bg-gray-700/50 rounded-xl p-4 lg:p-5 shadow-md hover:bg-gray-300/80 dark:hover:bg-gray-700 transition-colors cursor-pointer ">
                 {/* Title + Badge */}
                 <div className="flex items-center justify-between">
                   
-                  <h3 className="font-semibold text-base lg:text-lg">{item.title}</h3>
-                  <span className={`px-3 py-1.5 lg:px-4 lg:py-2 rounded-full text-sm font-medium flex-shrink-0 bg-accent/20 text-accent}`}>
+                  <h3 className="font-semibold text-base lg:text-lg text-black dark:text-white">{item.title}</h3>
+                  <span className={`px-3 py-1.5 lg:px-4 lg:py-2 rounded-full text-sm font-medium flex-shrink-0 bg-accent/20 text-accent`}>
                     {item.type === 'formation' ? 'Formation' : 'Stage'}
                   </span>
                 </div>
                 {/* Hidden Details until hover */}
                 <div className="opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-96 transition-all duration-300 overflow-hidden mt-2">
                   <div className="flex items-center gap-2 mb-2">
-                    <MapPin className="w-4 h-4 text-gray-400" />
-                    <p className="text-gray-400 text-sm lg:text-base">{item.location}</p>
+                    <MapPin className="w-4 h-4 text-gray-500 dark:text-gray-400" />
+                    <p className="text-gray-500 dark:text-gray-400 text-sm lg:text-base">{item.location}</p>
                   </div>
                   <div className="flex items-center gap-2 mb-2">
-                    <Calendar className="w-4 h-4 text-gray-400" />
-                    <span className="text-gray-400 text-sm lg:text-base font-medium">{item.period}</span>
+                    <Calendar className="w-4 h-4 text-gray-500 dark:text-gray-400" />
+                    <span className="text-gray-500 dark:text-gray-400 text-sm lg:text-base font-medium">{item.period}</span>
                   </div>
-                  <p className="text-sm lg:text-base text-gray-300 leading-relaxed">{item.description}</p>
+                  <p className="text-sm lg:text-base text-gray-600 dark:text-gray-300 leading-relaxed">{item.description}</p>
                 </div>
               </div>
             ))}

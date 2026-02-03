@@ -11,19 +11,33 @@
   
   body {
     @apply font-primary leading-loose;
-    @apply bg-black dark:bg-white;
-    @apply text-white dark:text-black;
+    @apply bg-white dark:bg-black;
+    @apply text-black dark:text-white;
   }
   
   :root {
     --primary-dark-light: #ffffff;
-    --accent-light: #ff6b35;
+    --accent: #ff6b35;
+    --accent-hover: #e55a2b;
+    --card-shadow: 0 2px 4px 1px rgba(255, 107, 53, 0.8);
+    --bg-animation-blend: normal;
   }
   
   .dark {
-    --primary-dark-light: #1c1c22;
-    --accent-light: #00ff99;
+    --primary-dark-light: #1c1c22 ;
+    --accent: #00ff99;
+    --accent-hover: #00e187;
+    --card-shadow: 0 2px 4px 1px rgba(0, 255, 153, 0.8);
+    --bg-animation-blend: screen;
   }
+}
+
+.shadow-project {
+  box-shadow: var(--card-shadow);
+}
+
+.bg-animation-canvas {
+  mix-blend-mode: var(--bg-animation-blend);
 }
 
 @layer utilities {
