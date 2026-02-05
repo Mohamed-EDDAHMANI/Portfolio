@@ -56,12 +56,20 @@ const About = () => {
       location: 'YouCode | UM6P, El Youssofia',
       period: "Septembre 2024 - En cours",
       description: "Formation intensive en développement d'applications web et mobiles avec les technologies modernes."
+    },
+    {
+      type: "stage",
+      title: "Stage de Développement Full Stack Mobile",
+      location: "Millennium Digital Solutions, Kenitra (remotely)",
+      period: "Novembre 2025 - Jusqu'à présent",
+      description: "Développement de solutions web et tech lead de version mobile."
     }
   ];
 
   const technicalSkills = [
-    "C Language", "HTML/CSS", "JavaScript (ES6+)", "Tailwind CSS", "Bootstrap","Figma",
-    "React.js", "Node.js", "MongoDB", "Next.js", "MySQL", "REST API", "PHP", "Laravel", "SQL", "Docker"
+    "C Language", "HTML/CSS", "JavaScript (ES6+)", "Tailwind CSS", "Bootstrap","Figma", "Flutter",
+    "TypeScript", "React Native", "Redux", "React.js", "Node.js", "MongoDB", "Next.js", "MySQL", "REST API", "PHP", "Laravel", "SQL","GraphQL", "PostgreSQL", "Docker"
+    ,"NestJS", "JWT"
   ];
 
   return (
